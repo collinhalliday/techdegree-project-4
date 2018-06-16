@@ -45,7 +45,7 @@ const myGame = (function() {
   in a game tree of potential moves and their associated outcomes. It is easier to grasp this concept by looking at examples online,
   or by creating your own game trees at near-end game states and running through them to the end-of-game states.
 
-  Each level of method calls that is not called with an end-of-game state as an argument will store in a result variable either the
+  Each level of method that is not called with an end-of-game state as an argument will store in a result variable either the
   score object from the end-of-game state passed as an argument to the level below it, or the best move object returned from the
   level below it. The best move for each level is determined from the perspective of the player whose turn it is. If it is the
   computer's turn (i.e. this.computer is passed as an argument to a particular method call), the method call will return a move
